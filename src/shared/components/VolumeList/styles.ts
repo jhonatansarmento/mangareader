@@ -2,23 +2,22 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #3f3e3e;
 `;
 
 export const Title = styled.h2`
   font-size: 24px;
   margin-bottom: 20px;
+  color: #fff;
 `;
 
 export const VolumeContainer = styled.div`
-  background-color: #f0f0f0;
+  background-color: #262626;
   border-radius: 4px;
   overflow: hidden;
 `;
 
 export const Accordion = styled.div`
-  border-bottom: 1px solid #ccc;
-
   &:last-child {
     border-bottom: none;
   }
@@ -32,16 +31,17 @@ export const AccordionSummary = styled.div`
   padding: 10px 15px;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: #232222;
   }
 `;
 
 export const AccordionTitle = styled.div`
   font-size: 18px;
+  color: #fff;
 `;
 
 export const AccordionDetails = styled.div`
-  background-color: #f9f9f9;
+  background-color: #4d4d4d;
   padding: 10px 44px;
 `;
 
@@ -53,7 +53,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   padding: 8px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #818181;
 
   a {
     text-decoration: none;
@@ -67,8 +67,9 @@ export const ListItem = styled.li`
 
 export const ListItemText = styled.span`
   font-size: 14px;
-  color: #888;
+  color: #a3a3a3;
+
   &:hover {
-    color: #eb3349;
+    color: #fff;
   }
 `;

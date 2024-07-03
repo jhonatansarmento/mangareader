@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0;
 `;
 
 export const Image = styled.img`
@@ -22,6 +21,7 @@ export const Content = styled.div`
 export const Title = styled.h1`
   font-size: 24px;
   margin-bottom: 10px;
+  color: #fff;
 `;
 
 export const Rating = styled.div`
