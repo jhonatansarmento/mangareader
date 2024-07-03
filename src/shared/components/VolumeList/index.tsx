@@ -22,9 +22,9 @@ export default function VolumeList() {
             <S.AccordionSummary onClick={handleChange(`panel${index}`)}>
               <S.AccordionTitle>{volume.title}</S.AccordionTitle>
               {expanded === `panel${index}` ? (
-                <FaChevronUp />
+                <FaChevronUp color='#fff' />
               ) : (
-                <FaChevronDown />
+                <FaChevronDown color='#fff' />
               )}
             </S.AccordionSummary>
             {expanded === `panel${index}` && (

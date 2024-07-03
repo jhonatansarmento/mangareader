@@ -1,3 +1,4 @@
+import { devices } from '@/shared/constants/devices';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -15,6 +16,12 @@ export const Header = styled.div`
   max-width: 1238px;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media ${devices.md} {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,6 +35,10 @@ export const Title = styled.h1`
     &:hover {
       color: #eb3349;
     }
+  }
+
+  @media ${devices.md} {
+    font-size: 18px;
   }
 `;
 
@@ -59,6 +70,10 @@ export const ChapterSelect = styled.select`
   &:focus {
     outline: none;
     border-color: #888;
+  }
+
+  @media ${devices.md} {
+    width: 100%;
   }
 `;
 

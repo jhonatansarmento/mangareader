@@ -42,7 +42,7 @@ export const AccordionTitle = styled.div`
 
 export const AccordionDetails = styled.div`
   background-color: #4d4d4d;
-  padding: 10px 44px;
+  padding: 10px 26px;
 `;
 
 export const List = styled.ul`
