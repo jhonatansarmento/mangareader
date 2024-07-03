@@ -55,6 +55,11 @@ export const ListItem = styled.li`
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &:last-child {
     border-bottom: none;
   }
@@ -63,4 +68,7 @@ export const ListItem = styled.li`
 export const ListItemText = styled.span`
   font-size: 14px;
   color: #888;
+  &:hover {
+    color: #eb3349;
+  }
 `;
