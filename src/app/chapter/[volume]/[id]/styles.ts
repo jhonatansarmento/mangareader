@@ -20,7 +20,18 @@ export const Header = styled.div`
 export const Title = styled.h1`
   margin: 0;
   font-size: 24px;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: #eb3349;
+    }
+  }
 `;
+
+export const LinkToHome = styled.a``;
 
 export const ChapterSelect = styled.select`
   background-color: #444;
@@ -29,7 +40,7 @@ export const ChapterSelect = styled.select`
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  appearance: none; /* Remove default dropdown arrow */
+  appearance: none;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMS43OTQ3TDYgNi43OTQ3TTEyIDEuNzk0N0w2IDYuNzk0NyIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz48L3N2Zz4='); /* Custom arrow */
   background-repeat: no-repeat;
   background-position: right 10px center;

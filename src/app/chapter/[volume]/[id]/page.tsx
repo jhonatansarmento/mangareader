@@ -1,5 +1,6 @@
 'use client';
 import { notFound, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import volumes from '@/shared/constants/volumes';
 import FloatButton from '@/shared/components/FloatButton';
 import * as S from './styles';
@@ -32,7 +33,11 @@ export default function ChapterPage({ params }: ChapterPageProps) {
     <S.Container>
       <S.Header>
         <S.Title>
-          {volumeData?.title} - {chapter.title}
+          <Link href='/' passHref>
+            One Piece
+          </Link>
+          {' - '}
+          {chapter.title}
         </S.Title>
         <S.ChapterSelect onChange={handleChapterChange} value={id}>
           {volumeData?.chapters.map((chapter) => (
