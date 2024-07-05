@@ -15,7 +15,7 @@ export default function VolumeList() {
 
   return (
     <S.Container>
-      <S.Title>TODOS OS VOLUMES</S.Title>
+      <S.Title>Todos os Volumes</S.Title>
       <S.VolumeContainer>
         {volumes.map((volume, index) => (
           <S.Accordion key={index}>

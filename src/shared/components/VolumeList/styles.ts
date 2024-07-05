@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
 `;
@@ -36,7 +36,7 @@ export const AccordionSummary = styled.div`
 `;
 
 export const AccordionTitle = styled.div`
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 `;
 
