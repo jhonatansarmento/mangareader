@@ -1,18 +1,29 @@
 'use client';
 
 import React from 'react';
+import { FaHome } from 'react-icons/fa';
+import { useRouter } from 'next/navigation';
 import * as S from './styles';
 
 export default function Header() {
+  const router = useRouter();
+
+  const handleHomeClick = () => {
+    router.push('/');
+  };
+
   return (
     <S.Container>
-      <S.Image
-        src='https://leitordemanga.com/wp-content/uploads/2017/10/Ler-manga-One-Piece-Online-193x278-1.png'
-        alt='One Piece'
-      />
-      <S.Content>
-        <S.Title>One Piece</S.Title>
-      </S.Content>
+      <S.Left>
+        <S.Title>Leitor Online</S.Title>
+      </S.Left>
+      <S.Center>
+        <S.HomeIcon onClick={handleHomeClick}>
+          <FaHome />
+        </S.HomeIcon>
+        <S.SearchBar placeholder='Pesquisar...' />
+      </S.Center>
+      <S.Right />
     </S.Container>
   );
 }
