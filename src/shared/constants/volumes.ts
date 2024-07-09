@@ -198,7 +198,7 @@ const comics: Comic[] = [
     title: 'The Boys',
     slug: slugify('The Boys'),
     image: 'https://m.media-amazon.com/images/I/61cgYV1gTLL._SL1155_.jpg',
-    latestChapter: 'Capítulo 14',
+    latestChapter: 'Capítulo 72',
     releaseDate: '28/08/2024',
     author: 'Garth Ennis',
     genre: ['Ação', 'Drama'],
@@ -211,186 +211,21 @@ const comics: Comic[] = [
         image:
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume1.jpg',
         chapters: [
-          {
-            title: 'Capítulo 1',
-            id: '1',
-            slug: slugify('Capítulo 1'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00022.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2001/The%20Boys-Os%20Rapazes%20-%2001-page-00023.jpg',
-            ],
-          },
-          {
-            title: 'Capítulo 2',
-            id: '2',
-            slug: slugify('Capítulo 2'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00022.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2002/The%20Boys-Os%20Rapazes%20-%2002-page-00023.jpg',
-            ],
-          },
-          {
-            title: 'Capítulo 3',
-            id: '3',
-            slug: slugify('Capítulo 3'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2003/The%20Boys-Os%20Rapazes%20-%2003-page-00022.jpg',
-              '',
-            ],
-          },
-          {
-            title: 'Capítulo 4',
-            id: '4',
-            slug: slugify('Capítulo 4'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00022.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2004/The%20Boys-Os%20Rapazes%20-%2004-page-00023.jpg',
-            ],
-          },
-          {
-            title: 'Capítulo 5',
-            id: '5',
-            slug: slugify('Capítulo 5'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00022.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2005/The%20Boys-Os%20Rapazes%20-%2005-page-00023.jpg',
-            ],
-          },
-          {
-            title: 'Capítulo 6',
-            id: '6',
-            slug: slugify('Capítulo 6'),
-            imageUrls: [
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00001.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00002.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00003.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00004.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00005.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00006.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00007.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00008.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00009.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00010.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00011.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00012.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00013.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00014.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00015.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00016.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00017.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00018.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00019.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00020.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00021.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00022.jpg',
-              'https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%2006/The%20Boys-Os%20Rapazes%20-%2006-page-00023.jpg',
-            ],
-          },
+          // Capítulos de 1 a 6
+          ...Array.from({ length: 6 }, (_, i) => ({
+            title: `Capítulo ${i + 1}`,
+            id: `${i + 1}`,
+            slug: slugify(`Capítulo ${i + 1}`),
+            imageUrls: Array.from(
+              { length: 23 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 1
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 1
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
         ],
       },
       {
@@ -398,54 +233,295 @@ const comics: Comic[] = [
         image:
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume2.jpg',
         chapters: [
-          {
-            title: 'Capítulo 7',
-            id: '7',
-            slug: slugify('Capítulo 7'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 8',
-            id: '8',
-            slug: slugify('Capítulo 8'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 9',
-            id: '9',
-            slug: slugify('Capítulo 9'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 10',
-            id: '10',
-            slug: slugify('Capítulo 10'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 11',
-            id: '11',
-            slug: slugify('Capítulo 11'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 12',
-            id: '12',
-            slug: slugify('Capítulo 12'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 13',
-            id: '13',
-            slug: slugify('Capítulo 13'),
-            imageUrls: [],
-          },
-          {
-            title: 'Capítulo 14',
-            id: '14',
-            slug: slugify('Capítulo 14'),
-            imageUrls: [],
-          },
+          // Capítulos de 7 a 14
+          ...Array.from({ length: 8 }, (_, i) => ({
+            title: `Capítulo ${i + 7}`,
+            id: `${i + 7}`,
+            slug: slugify(`Capítulo ${i + 7}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 7
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 7
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Bom para a Alma',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume3.jpg',
+        chapters: [
+          ...Array.from({ length: 8 }, (_, i) => ({
+            title: `Capítulo ${i + 15}`,
+            id: `${i + 15}`,
+            slug: slugify(`Capítulo ${i + 15}`),
+            imageUrls: Array.from(
+              { length: i + 15 === 22 ? 27 : 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 15
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 15
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+
+      {
+        title: 'Hora de Partir',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume4.jpg',
+        chapters: [
+          // Capítulos de 23 a 30
+          ...Array.from({ length: 8 }, (_, i) => {
+            const chapterNumber = i + 23;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 23:
+              case 24:
+              case 27:
+                pageCount = 25;
+                break;
+              case 25:
+                pageCount = 27;
+                break;
+              case 26:
+              case 28:
+              case 29:
+                pageCount = 26;
+                break;
+              case 30:
+                pageCount = 31;
+                break;
+              default:
+                pageCount = 25; // Default case, if needed
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
+        ],
+      },
+      {
+        title: 'Herogasm',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume5.jpg',
+        chapters: [
+          // Capítulos de Herogasm 1 a 6
+          ...Array.from({ length: 6 }, (_, i) => ({
+            title: `Capítulo ${i + 1}`,
+            id: `${i + 1}`,
+            slug: slugify(`Capítulo ${i + 1}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/Herogasm-${String(
+                  i + 1
+                ).padStart(2, '0')}/Herogasm-${String(i + 1).padStart(
+                  2,
+                  '0'
+                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'A Sociedade de Auto-Preservação',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume6.jpg',
+        chapters: [
+          // Capítulos de 31 a 38
+          ...Array.from({ length: 8 }, (_, i) => ({
+            title: `Capítulo ${i + 31}`,
+            id: `${i + 31}`,
+            slug: slugify(`Capítulo ${i + 31}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 31
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 31
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Os Inocentes',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume7.jpg',
+        chapters: [
+          // Capítulos de 39 a 47
+          ...Array.from({ length: 9 }, (_, i) => ({
+            title: `Capítulo ${i + 39}`,
+            id: `${i + 39}`,
+            slug: slugify(`Capítulo ${i + 39}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 39
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 39
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'O Rapaz Escocês',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume8.jpg',
+        chapters: [
+          // Capítulos de Highland Laddie 1 a 6
+          ...Array.from({ length: 6 }, (_, i) => ({
+            title: `Capítulo ${i + 1}`,
+            id: `${i + 1}`,
+            slug: slugify(`Capítulo ${i + 1}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/Highland-Laddie-${String(
+                  i + 1
+                ).padStart(2, '0')}/Highland-Laddie-${String(i + 1).padStart(
+                  2,
+                  '0'
+                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Montanha-Russa',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume9.jpg',
+        chapters: [
+          // Capítulos de 48 a 59
+          ...Array.from({ length: 12 }, (_, i) => ({
+            title: `Capítulo ${i + 48}`,
+            id: `${i + 48}`,
+            slug: slugify(`Capítulo ${i + 48}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 48
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 48
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Pau pra Toda Obra',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume10.jpg',
+        chapters: [
+          // Capítulos de Butcher, Baker, Candlestickmaker 1 a 6
+          ...Array.from({ length: 6 }, (_, i) => ({
+            title: `Capítulo ${i + 1}`,
+            id: `${i + 1}`,
+            slug: slugify(`Capítulo ${i + 1}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/Butcher-Baker-Candlestickmaker-${String(
+                  i + 1
+                ).padStart(2, '0')}/Butcher-Baker-Candlestickmaker-${String(
+                  i + 1
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'No Topo da Colina com as Espadas de Mil Homens',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume11.jpg',
+        chapters: [
+          // Capítulos de 60 a 65
+          ...Array.from({ length: 6 }, (_, i) => ({
+            title: `Capítulo ${i + 60}`,
+            id: `${i + 60}`,
+            slug: slugify(`Capítulo ${i + 60}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 60
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 60
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Metendo o Pé na Porta',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume12.jpg',
+        chapters: [
+          // Capítulos de 66 a 72
+          ...Array.from({ length: 7 }, (_, i) => ({
+            title: `Capítulo ${i + 66}`,
+            id: `${i + 66}`,
+            slug: slugify(`Capítulo ${i + 66}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 66
+                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                  i + 66
+                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
+        ],
+      },
+      {
+        title: 'Querida Becky',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume13.jpg',
+        chapters: [
+          // Capítulos de Dear Becky 1 a 8
+          ...Array.from({ length: 8 }, (_, i) => ({
+            title: `Capítulo ${i + 1}`,
+            id: `${i + 1}`,
+            slug: slugify(`Capítulo ${i + 1}`),
+            imageUrls: Array.from(
+              { length: 25 },
+              (_, j) =>
+                `https://storage.googleapis.com/theboyshq/Principal/Dear-Becky-${String(
+                  i + 1
+                ).padStart(2, '0')}/Dear-Becky-${String(i + 1).padStart(
+                  2,
+                  '0'
+                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
+            ),
+          })),
         ],
       },
     ],
