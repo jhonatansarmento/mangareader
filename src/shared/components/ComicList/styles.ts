@@ -13,20 +13,21 @@ export const Title = styled.h2`
 export const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 4.5rem;
 `;
 
 export const Item = styled.div`
-  width: 45%;
+  display: flex;
+  width: 14.5rem;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.2s;
+  justify-content: space-between;
+`;
 
-  &:hover {
-    transform: translateY(-5px);
-  }
+export const ImageWrapper = styled.div`
+  flex-shrink: 0;
 `;
 
 export const Image = styled.img`
@@ -35,24 +36,30 @@ export const Image = styled.img`
   cursor: pointer;
 `;
 
-export const ItemTitle = styled.h3`
-  font-size: 20px;
-  margin: 10px;
-  cursor: pointer;
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 `;
 
-export const Rating = styled.p`
-  margin: 0 10px;
-  color: #f39c12;
+export const ItemTitle = styled.h3`
+  font-size: 20px;
+  margin: 10px 0;
+  cursor: pointer;
 `;
 
 export const LatestChapter = styled.p`
-  margin: 0 10px;
-  color: #3498db;
+  display: flex;
+  justify-content: center;
+  color: #fff;
   cursor: pointer;
+  background-color: #333;
+  padding: 2px 10px;
+  border-radius: 10px;
 `;
 
 export const ReleaseDate = styled.p`
-  margin: 0 10px 10px 10px;
+  margin: 0;
   color: #888;
 `;

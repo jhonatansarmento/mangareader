@@ -15,12 +15,9 @@ export default function Header() {
   return (
     <S.Container>
       <S.Left>
-        <S.Title>Leitor Online</S.Title>
+        <S.Title onClick={handleHomeClick}>Leitor Online</S.Title>
       </S.Left>
       <S.Center>
-        <S.HomeIcon onClick={handleHomeClick}>
-          <FaHome />
-        </S.HomeIcon>
         <S.SearchBar placeholder='Pesquisar...' />
       </S.Center>
       <S.Right />

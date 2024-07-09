@@ -20,11 +20,7 @@ export const Right = styled.div``;
 
 export const Title = styled.h1`
   font-size: 24px;
-`;
-
-export const HomeIcon = styled.div`
   cursor: pointer;
-  margin-right: 20px;
 `;
 
 export const SearchBar = styled.input`
