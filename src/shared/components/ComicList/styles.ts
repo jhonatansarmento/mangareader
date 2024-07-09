@@ -20,8 +20,6 @@ export const List = styled.div`
 export const Item = styled.div`
   display: flex;
   width: 14.5rem;
-  margin-bottom: 20px;
-  border-radius: 8px;
   overflow: hidden;
   justify-content: space-between;
 `;
@@ -45,7 +43,6 @@ export const InfoWrapper = styled.div`
 
 export const ItemTitle = styled.h3`
   font-size: 20px;
-  margin: 10px 0;
   cursor: pointer;
 `;
 
@@ -62,4 +59,9 @@ export const LatestChapter = styled.p`
 export const ReleaseDate = styled.p`
   margin: 0;
   color: #888;
+`;
+
+export const Divider = styled.div`
+  width: 1px;
+  background-color: #888;
 `;

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Manga</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      header nav a,
+      footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      .main-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .manga-details,
+      .volumes-list {
+        width: 80%;
+        margin: 20px 0;
+      }
+      .manga-details img {
+        max-width: 200px;
+        border-radius: 10px;
+      }
+      .manga-info {
+        margin-left: 20px;
+      }
+      .volume {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .volume img {
+        max-width: 100px;
+        border-radius: 5px;
+      }
+      .volume-info {
+        flex: 1;
+        margin-left: 20px;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Plataforma de Mangas</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Mangas</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <section class="main-section">
+      <div class="manga-details">
+        <div style="display: flex">
+          <img src="manga-cover.jpg" alt="Capa do Manga" />
+          <div class="manga-info">
+            <h2>Título do Manga</h2>
+            <p><strong>Autor:</strong> Nome do Autor</p>
+            <p><strong>Gênero:</strong> Aventura, Fantasia</p>
+            <p>
+              <strong>Sinopse:</strong> Uma breve descrição do enredo do
+              manga...
+            </p>
+            <p><strong>Número de Volumes:</strong> 10</p>
+            <p><strong>Avaliação:</strong> 4.5/5</p>
+            <div class="buttons">
+              <button>Adicionar aos Favoritos</button>
+              <button>Ler Agora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="volumes-list">
+        <h3>Volumes Disponíveis</h3>
+        <div class="volume">
+          <img src="volume1.jpg" alt="Capa do Volume 1" />
+          <div class="volume-info">
+            <h4>Volume 1</h4>
+          </div>
+          <button>Ler</button>
+        </div>
+        <div class="volume">
+          <img src="volume2.jpg" alt="Capa do Volume 2" />
+          <div class="volume-info">
+            <h4>Volume 2</h4>
+          </div>
+          <button>Ler</button>
+        </div>
+        <div class="volume">
+          <img src="volume3.jpg" alt="Capa do Volume 3" />
+          <div class="volume-info">
+            <h4>Volume 3</h4>
+          </div>
+          <button>Ler</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Plataforma de Mangas. Todos os direitos reservados.</p>
+      <nav>
+        <a href="#">Sobre nós</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
+      </nav>
+    </footer>
+  </body>
+</html>

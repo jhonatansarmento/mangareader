@@ -10,6 +10,7 @@ export interface Chapter {
 export interface Volume {
   title: string;
   chapters: Chapter[];
+  image?: string;
 }
 
 export interface Comic {
@@ -18,6 +19,11 @@ export interface Comic {
   image: string;
   latestChapter: string;
   releaseDate: string;
+  author: string;
+  genre: string[];
+  synopsis: string;
+  rating: number;
+  completed: boolean;
   volumes: Volume[];
 }
 
@@ -29,9 +35,17 @@ const comics: Comic[] = [
       'https://leitordemanga.com/wp-content/uploads/2017/10/Ler-manga-One-Piece-Online-193x278-1.png',
     latestChapter: 'Capítulo 3',
     releaseDate: '08/08/2024',
+    author: 'Eiichiro Oda',
+    genre: ['Aventura', 'Fantasia'],
+    synopsis:
+      'A história de Monkey D. Luffy, um jovem pirata em busca do tesouro One Piece.',
+    rating: 4.8,
+    completed: false,
     volumes: [
       {
         title: 'Volume 01',
+        image:
+          'https://storage.googleapis.com/onepiecemanga/CAPAS%20DE%20VOLUMES/Volume_1.webp',
         chapters: [
           {
             title: 'Capítulo 1 - Romance Dawn',
@@ -155,6 +169,8 @@ const comics: Comic[] = [
       },
       {
         title: 'Volume 02',
+        image:
+          'https://storage.googleapis.com/onepiecemanga/CAPAS%20DE%20VOLUMES/Volume_2.webp',
         chapters: [
           {
             title: 'Capítulo 9 - Femme Fatale',
@@ -184,9 +200,16 @@ const comics: Comic[] = [
     image: 'https://m.media-amazon.com/images/I/61cgYV1gTLL._SL1155_.jpg',
     latestChapter: 'Capítulo 14',
     releaseDate: '28/08/2024',
+    author: 'Garth Ennis',
+    genre: ['Ação', 'Drama'],
+    synopsis: 'Um grupo de vigilantes luta contra super-heróis corruptos.',
+    rating: 4.5,
+    completed: true,
     volumes: [
       {
         title: 'O Nome do Jogo',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume1.jpg',
         chapters: [
           {
             title: 'Capítulo 1',
@@ -228,6 +251,8 @@ const comics: Comic[] = [
       },
       {
         title: 'Pegue Alguns',
+        image:
+          'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume2.jpg',
         chapters: [
           {
             title: 'Capítulo 7',
