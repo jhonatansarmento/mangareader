@@ -300,7 +300,7 @@ const comics: Comic[] = [
                 pageCount = 31;
                 break;
               default:
-                pageCount = 25; // Default case, if needed
+                pageCount = 25;
             }
 
             return {
@@ -329,21 +329,45 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume5.jpg',
         chapters: [
           // Capítulos de Herogasm 1 a 6
-          ...Array.from({ length: 6 }, (_, i) => ({
-            title: `Capítulo ${i + 1}`,
-            id: `${i + 1}`,
-            slug: slugify(`Capítulo ${i + 1}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/Herogasm-${String(
-                  i + 1
-                ).padStart(2, '0')}/Herogasm-${String(i + 1).padStart(
-                  2,
-                  '0'
-                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 6 }, (_, i) => {
+            const chapterNumber = i + 1;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 1:
+                pageCount = 22;
+                break;
+              case 2:
+              case 3:
+              case 5:
+              case 6:
+                pageCount = 24;
+                break;
+              case 4:
+                pageCount = 25;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber} - Herogasm`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber} - Herogasm`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Herogasm/The%20Boys%20-%20Herogasm%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys%20-%20Herogasm%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}_page-${String(j + 1).padStart(
+                    4,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -352,20 +376,47 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume6.jpg',
         chapters: [
           // Capítulos de 31 a 38
-          ...Array.from({ length: 8 }, (_, i) => ({
-            title: `Capítulo ${i + 31}`,
-            id: `${i + 31}`,
-            slug: slugify(`Capítulo ${i + 31}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 31
-                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 31
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 8 }, (_, i) => {
+            const chapterNumber = i + 31;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 31:
+                pageCount = 26;
+                break;
+              case 32:
+              case 33:
+              case 35:
+              case 36:
+              case 37:
+              case 38:
+                pageCount = 24;
+                break;
+              case 34:
+                pageCount = 25;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -374,20 +425,50 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume7.jpg',
         chapters: [
           // Capítulos de 39 a 47
-          ...Array.from({ length: 9 }, (_, i) => ({
-            title: `Capítulo ${i + 39}`,
-            id: `${i + 39}`,
-            slug: slugify(`Capítulo ${i + 39}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 39
-                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 39
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 9 }, (_, i) => {
+            const chapterNumber = i + 39;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 39:
+              case 43:
+              case 46:
+                pageCount = 24;
+                break;
+              case 40:
+                pageCount = 27;
+                break;
+              case 41:
+              case 42:
+              case 44:
+              case 45:
+                pageCount = 25;
+                break;
+              case 47:
+                pageCount = 23;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -396,21 +477,50 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume8.jpg',
         chapters: [
           // Capítulos de Highland Laddie 1 a 6
-          ...Array.from({ length: 6 }, (_, i) => ({
-            title: `Capítulo ${i + 1}`,
-            id: `${i + 1}`,
-            slug: slugify(`Capítulo ${i + 1}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/Highland-Laddie-${String(
-                  i + 1
-                ).padStart(2, '0')}/Highland-Laddie-${String(i + 1).padStart(
-                  2,
-                  '0'
-                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 6 }, (_, i) => {
+            const chapterNumber = i + 1;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 1:
+              case 2:
+                pageCount = 26;
+                break;
+              case 3:
+                pageCount = 27;
+                break;
+              case 4:
+              case 5:
+                pageCount = 24;
+                break;
+              case 6:
+                pageCount = 25;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber} - O Rapaz Escocês`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber} - O Rapaz Escocês`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Rapazinho%20das%20Montanhas/The%20Boys%20-%20Rapazinho%20das%20Montanhas%20-%20${String(
+                    chapterNumber
+                  ).padStart(
+                    2,
+                    '0'
+                  )}/The%20Boys%20-%20Rapazinho%20das%20Montanhas%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -419,20 +529,55 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume9.jpg',
         chapters: [
           // Capítulos de 48 a 59
-          ...Array.from({ length: 12 }, (_, i) => ({
-            title: `Capítulo ${i + 48}`,
-            id: `${i + 48}`,
-            slug: slugify(`Capítulo ${i + 48}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 48
-                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 48
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 12 }, (_, i) => {
+            const chapterNumber = i + 48;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 48:
+              case 49:
+              case 51:
+              case 55:
+              case 56:
+              case 57:
+              case 58:
+              case 59:
+                pageCount = 24;
+                break;
+              case 50:
+                pageCount = 27;
+                break;
+              case 52:
+                pageCount = 23;
+                break;
+              case 53:
+                pageCount = 22;
+                break;
+              case 54:
+                pageCount = 23;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -441,20 +586,48 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume10.jpg',
         chapters: [
           // Capítulos de Butcher, Baker, Candlestickmaker 1 a 6
-          ...Array.from({ length: 6 }, (_, i) => ({
-            title: `Capítulo ${i + 1}`,
-            id: `${i + 1}`,
-            slug: slugify(`Capítulo ${i + 1}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/Butcher-Baker-Candlestickmaker-${String(
-                  i + 1
-                ).padStart(2, '0')}/Butcher-Baker-Candlestickmaker-${String(
-                  i + 1
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 6 }, (_, i) => {
+            const chapterNumber = i + 1;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 1:
+                pageCount = 25;
+                break;
+              case 2:
+              case 3:
+              case 4:
+              case 5:
+                pageCount = 24;
+                break;
+              case 6:
+                pageCount = 31;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber} - Pau pra Toda Obra`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber} - Pau pra Toda Obra`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/A%C3%A7ougueiro%2C%20%20Padeiro%2C%20Fabricante%20de%20Casti%C3%A7ais/The%20Boys%20-%20A%C3%A7ougueiro%2C%20%20Padeiro%2C%20Fabricante%20de%20Casti%C3%A7ais%20-%20${String(
+                    chapterNumber
+                  ).padStart(
+                    2,
+                    '0'
+                  )}/The%20Boys%20-%20A%C3%A7ougueiro%2C%20%20Padeiro%2C%20Fabricante%20de%20Casti%C3%A7ais%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -463,20 +636,47 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume11.jpg',
         chapters: [
           // Capítulos de 60 a 65
-          ...Array.from({ length: 6 }, (_, i) => ({
-            title: `Capítulo ${i + 60}`,
-            id: `${i + 60}`,
-            slug: slugify(`Capítulo ${i + 60}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 60
-                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 60
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 6 }, (_, i) => {
+            const chapterNumber = i + 60;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 60:
+              case 62:
+              case 63:
+                pageCount = 25;
+                break;
+              case 61:
+                pageCount = 24;
+                break;
+              case 64:
+                pageCount = 23;
+                break;
+              case 65:
+                pageCount = 34;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -485,20 +685,46 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume12.jpg',
         chapters: [
           // Capítulos de 66 a 72
-          ...Array.from({ length: 7 }, (_, i) => ({
-            title: `Capítulo ${i + 66}`,
-            id: `${i + 66}`,
-            slug: slugify(`Capítulo ${i + 66}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 66
-                ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
-                  i + 66
-                ).padStart(2, '0')}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 7 }, (_, i) => {
+            const chapterNumber = i + 66;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 66:
+              case 68:
+              case 69:
+              case 70:
+              case 71:
+                pageCount = 25;
+                break;
+              case 67:
+                pageCount = 24;
+                break;
+              case 72:
+                pageCount = 37;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber}`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber}`),
+              imageUrls: Array.from(
+                { length: pageCount },
+                (_, j) =>
+                  `https://storage.googleapis.com/theboyshq/Principal/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}/The%20Boys-Os%20Rapazes%20-%20${String(
+                    chapterNumber
+                  ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                    5,
+                    '0'
+                  )}.jpg`
+              ),
+            };
+          }),
         ],
       },
       {
@@ -507,21 +733,53 @@ const comics: Comic[] = [
           'https://storage.googleapis.com/theboyshq/CAPAS%20VOLUMES/volume13.jpg',
         chapters: [
           // Capítulos de Dear Becky 1 a 8
-          ...Array.from({ length: 8 }, (_, i) => ({
-            title: `Capítulo ${i + 1}`,
-            id: `${i + 1}`,
-            slug: slugify(`Capítulo ${i + 1}`),
-            imageUrls: Array.from(
-              { length: 25 },
-              (_, j) =>
-                `https://storage.googleapis.com/theboyshq/Principal/Dear-Becky-${String(
-                  i + 1
-                ).padStart(2, '0')}/Dear-Becky-${String(i + 1).padStart(
-                  2,
-                  '0'
-                )}-page-${String(j + 1).padStart(5, '0')}.jpg`
-            ),
-          })),
+          ...Array.from({ length: 8 }, (_, i) => {
+            const chapterNumber = i + 1;
+            let pageCount;
+
+            switch (chapterNumber) {
+              case 1:
+                pageCount = 26;
+                break;
+              case 2:
+              case 7:
+                pageCount = 0;
+                break;
+              case 3:
+              case 4:
+              case 5:
+              case 6:
+              case 8:
+                pageCount = 25;
+                break;
+              default:
+                pageCount = 25;
+            }
+
+            return {
+              title: `Capítulo ${chapterNumber} - Querida Becky`,
+              id: `${chapterNumber}`,
+              slug: slugify(`Capítulo ${chapterNumber} - Querida Becky`),
+              imageUrls:
+                pageCount > 0
+                  ? Array.from(
+                      { length: pageCount },
+                      (_, j) =>
+                        `https://storage.googleapis.com/theboyshq/Querida%20Becky/The%20Boys%20-%20Querida%20Becky%20-%20${String(
+                          chapterNumber
+                        ).padStart(
+                          2,
+                          '0'
+                        )}/The%20Boys%20-%20Querida%20Becky%20-%20${String(
+                          chapterNumber
+                        ).padStart(2, '0')}-page-${String(j + 1).padStart(
+                          5,
+                          '0'
+                        )}.jpg`
+                    )
+                  : [],
+            };
+          }),
         ],
       },
     ],

@@ -1,3 +1,4 @@
+import { devices } from '@/shared/constants/devices';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -15,6 +16,10 @@ export const List = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 4.5rem;
+
+  @media ${devices.md} {
+    gap: 2.5rem;
+  }
 `;
 
 export const Item = styled.div`
@@ -64,4 +69,22 @@ export const ReleaseDate = styled.p`
 export const Divider = styled.div`
   width: 1px;
   background-color: #888;
+
+  @media ${devices.md} {
+    height: 1px;
+    width: 100%;
+  }
+`;
+
+interface StatusFlagProps {
+  completed: boolean;
+}
+
+export const StatusFlag = styled.div<StatusFlagProps>`
+  padding: 2px 8px;
+  background-color: ${({ completed }) => (completed ? '#4CAF50' : '#FF9800')};
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
 `;
