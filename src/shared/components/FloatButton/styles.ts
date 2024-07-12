@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FloatButton = styled.button`
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;

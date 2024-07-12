@@ -1,13 +1,15 @@
-// src/app/titulo/[comicSlug]/[chapterSlug]/page.tsx
-
 'use client';
 
-import { notFound, useRouter } from 'next/navigation';
-import Link from 'next/link';
 import FloatButton from '@/shared/components/FloatButton';
-import * as S from './styles';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import comics from '@/shared/constants/volumes';
+import Link from 'next/link';
+import { notFound, useRouter } from 'next/navigation';
+import React from 'react';
+import {
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from 'react-icons/md';
+import * as S from './styles';
 
 interface ChapterPageProps {
   params: {
@@ -62,44 +64,36 @@ export default function ChapterPage({ params }: ChapterPageProps) {
     }
   };
 
+  const allChapters = comic?.volumes.flatMap((volume) => volume.chapters) || [];
+  const isLastChapter =
+    allChapters.findIndex((c) => c.slug === decodedChapterSlug) ===
+    allChapters.length - 1;
+
   return (
     <S.Container>
       <S.Header>
         <S.Title>
-          <Link href='/' passHref>
-            {comic?.title}
-          </Link>
+          <Link href={`/titulo/${comicSlug}`}>{comic?.title}</Link>
         </S.Title>
         <S.Navigation>
           <S.NavButton
             onClick={handlePreviousChapter}
-            disabled={
-              !chapter ||
-              chapter === comic?.volumes.flatMap((volume) => volume.chapters)[0]
-            }
+            disabled={!chapter || chapter === allChapters[0]}
           >
-            <FaChevronLeft />
+            <MdOutlineKeyboardArrowLeft />
           </S.NavButton>
           <S.ChapterSelect onChange={handleChapterChange} value={chapter.slug}>
-            {comic?.volumes
-              .flatMap((volume) => volume.chapters)
-              .map((chapter) => (
-                <option key={chapter.id} value={chapter.slug}>
-                  {chapter.title}
-                </option>
-              ))}
+            {allChapters.map((chapter) => (
+              <option key={chapter.id} value={chapter.slug}>
+                {chapter.title}
+              </option>
+            ))}
           </S.ChapterSelect>
           <S.NavButton
             onClick={handleNextChapter}
-            disabled={
-              !chapter ||
-              chapter ===
-                comic?.volumes.flatMap((volume) => volume.chapters)[
-                  comic?.volumes.flatMap((volume) => volume.chapters).length - 1
-                ]
-            }
+            disabled={!chapter || isLastChapter}
           >
-            <FaChevronRight />
+            <MdOutlineKeyboardArrowRight />
           </S.NavButton>
         </S.Navigation>
       </S.Header>
@@ -107,6 +101,27 @@ export default function ChapterPage({ params }: ChapterPageProps) {
         {chapter.imageUrls.map((url, index) => (
           <S.Image key={index} src={url} alt={`Page ${index + 1}`} />
         ))}
+        <S.Navigation>
+          <S.NavButton
+            onClick={handlePreviousChapter}
+            disabled={!chapter || chapter === allChapters[0]}
+          >
+            <MdOutlineKeyboardArrowLeft />
+          </S.NavButton>
+          <S.ChapterSelect onChange={handleChapterChange} value={chapter.slug}>
+            {allChapters.map((chapter) => (
+              <option key={chapter.id} value={chapter.slug}>
+                {chapter.title}
+              </option>
+            ))}
+          </S.ChapterSelect>
+          <S.NavButton
+            onClick={handleNextChapter}
+            disabled={!chapter || isLastChapter}
+          >
+            <MdOutlineKeyboardArrowRight />
+          </S.NavButton>
+        </S.Navigation>
       </S.Content>
       <FloatButton />
     </S.Container>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   font-family: Arial, sans-serif;
 `;
 
@@ -44,6 +44,14 @@ export const Title = styled.h1`
 export const Navigation = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: #555;
+  width: 100%;
+  padding: 10px;
+
+  @media ${devices.md} {
+    width: 100%;
+  }
 `;
 
 export const NavButton = styled.button`
@@ -54,23 +62,27 @@ export const NavButton = styled.button`
   font-size: 24px;
 
   &:disabled {
-    color: #555;
+    color: #303030;
     cursor: not-allowed;
+  }
+
+  svg {
+    display: flex;
   }
 `;
 
 export const ChapterSelect = styled.select`
-  background-color: #444;
+  background-color: transparent;
+  border: none;
   color: white;
-  border: 1px solid #555;
-  padding: 10px;
   font-size: 12px;
   border-radius: 5px;
   appearance: none;
   cursor: pointer;
+  text-align: center;
 
-  @media ${devices.md} {
-    width: 100%;
+  option {
+    background-color: #555;
   }
 `;
 
