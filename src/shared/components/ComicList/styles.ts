@@ -26,11 +26,15 @@ export const Item = styled.div`
   display: flex;
   width: 14.5rem;
   overflow: hidden;
-  justify-content: space-between;
+
+  @media ${devices.md} {
+    width: 100%;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   flex-shrink: 0;
+  padding-right: 4px;
 `;
 
 export const Image = styled.img`
@@ -59,6 +63,7 @@ export const LatestChapter = styled.p`
   background-color: #333;
   padding: 2px 10px;
   border-radius: 10px;
+  width: fit-content;
 `;
 
 export const ReleaseDate = styled.p`
@@ -87,4 +92,5 @@ export const StatusFlag = styled.div<StatusFlagProps>`
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
+  width: fit-content;
 `;

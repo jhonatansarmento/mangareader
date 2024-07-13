@@ -27,6 +27,30 @@ export interface Comic {
   volumes: Volume[];
 }
 
+const generateImageUrls = (
+  chapterId: number,
+  totalJpg: number,
+  totalPng: number
+) => {
+  const baseJpgUrl = `https://storage.googleapis.com/gashbell/Gash%20Bell/VOLUMES/Gash%20Volume%2001/%5BChrono%5D%20Gash%20-%20Volume%2001%20-%20Capitulo%20${chapterId
+    .toString()
+    .padStart(3, '0')}/Capitulo%20${chapterId.toString().padStart(3, '0')}%20(`;
+  const basePngUrl = `https://storage.googleapis.com/gashbell/Gash%20Bell/VOLUMES/Gash%20Volume%2001/%5BChrono%5D%20Gash%20-%20Volume%2001%20-%20Capitulo%20${chapterId
+    .toString()
+    .padStart(3, '0')}/Capitulo%20${chapterId.toString().padStart(3, '0')}%20(`;
+
+  const jpgUrls = Array.from(
+    { length: totalJpg },
+    (_, i) => `${baseJpgUrl}${i + 1}).jpg`
+  );
+  const pngUrls = Array.from(
+    { length: totalPng },
+    (_, i) => `${basePngUrl}${i + 1}).png`
+  );
+
+  return [...jpgUrls, ...pngUrls];
+};
+
 const comics: Comic[] = [
   {
     title: 'One Piece',
@@ -782,6 +806,78 @@ const comics: Comic[] = [
           }),
         ],
       },
+    ],
+  },
+  {
+    title: 'Konjiki no Gash Bell',
+    slug: slugify('Konjiki no Gash Bell'),
+    image:
+      'https://storage.googleapis.com/gashbell/Gash%20Bell/CAPAS%20DE%20VOLUMES/00.jpg',
+    latestChapter: 'Capítulo 323',
+    releaseDate: '10/10/2024',
+    author: 'Makoto Raiku',
+    genre: ['Aventura', 'Fantasia', 'Comédia'],
+    synopsis:
+      'A história de Gash Bell, um demônio enviado para a Terra para competir pelo título de rei do mundo dos demônios.',
+    rating: 4.7,
+    completed: true,
+    volumes: [
+      {
+        title: 'Volume 01',
+        image:
+          'https://storage.googleapis.com/gashbell/Gash%20Bell/CAPAS%20DE%20VOLUMES/KNGB-Vol-01.jpg',
+        chapters: [
+          {
+            title: 'Capítulo 1 - Kiyomaro, o Herói',
+            id: '1',
+            slug: slugify('Capítulo 1 - Kiyomaro, o Herói'),
+            imageUrls: generateImageUrls(1, 5, 43),
+          },
+          {
+            title: 'Capítulo 2 - O Livro Ilegível',
+            id: '2',
+            slug: slugify('Capítulo 2 - O Livro Ilegível'),
+            imageUrls: generateImageUrls(2, 2, 20),
+          },
+          {
+            title: 'Capítulo 3 - Relâmpago do Coração',
+            id: '3',
+            slug: slugify('Capítulo 3 - Relâmpago do Coração'),
+            imageUrls: generateImageUrls(3, 2, 18),
+          },
+          {
+            title: 'Capítulo 4 - Kiyomaro, Popular',
+            id: '4',
+            slug: slugify('Capítulo 4 - Kiyomaro, Popular'),
+            imageUrls: generateImageUrls(4, 2, 18),
+          },
+          {
+            title: 'Capítulo 5 - Ferramenta ou Humano!?',
+            id: '5',
+            slug: slugify('Capítulo 5 - Ferramenta ou Humano!?'),
+            imageUrls: generateImageUrls(5, 1, 18),
+          },
+          {
+            title: 'Capítulo 6 - O Triunfo de Kiyomaro',
+            id: '6',
+            slug: slugify('Capítulo 6 - O Triunfo de Kiyomaro'),
+            imageUrls: generateImageUrls(6, 1, 20),
+          },
+          {
+            title: 'Capítulo 7 - Primeira Luta',
+            id: '7',
+            slug: slugify('Capítulo 7 - Primeira Luta'),
+            imageUrls: generateImageUrls(7, 1, 18),
+          },
+          {
+            title: 'Capítulo 8 - Qualificações para um Rei',
+            id: '8',
+            slug: slugify('Capítulo 8 - Qualificações para um Rei'),
+            imageUrls: generateImageUrls(8, 3, 26),
+          },
+        ],
+      },
+      // ... outros volumes
     ],
   },
 ];

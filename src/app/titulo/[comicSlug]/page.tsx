@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
-import { useParams } from 'next/navigation';
-import comics, { Comic, Volume, Chapter } from '@/shared/constants/volumes';
-import * as S from './styles';
-import Link from 'next/link';
 import Header from '@/shared/components/Header';
+import comics, { Chapter, Comic, Volume } from '@/shared/constants/volumes';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+import * as S from './styles';
 
 const ComicDetail = () => {
   const params = useParams();
@@ -27,7 +26,7 @@ const ComicDetail = () => {
 
   const getLatestChapters = (comic: Comic): Chapter[] => {
     const chapters = comic.volumes.flatMap((volume: Volume) => volume.chapters);
-    return chapters.slice(-10).reverse(); // Obtem os 10 capítulos mais recentes e inverte a ordem
+    return chapters.slice(-10).reverse();
   };
 
   return (
