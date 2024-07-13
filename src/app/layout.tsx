@@ -1,5 +1,6 @@
 import StyledComponentsRegistry from '@/lib/registry';
 import { GlobalStyle } from '@/styles/global.styles';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang='pt-br'>
       <body>
         <GlobalStyle />
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          {children}
+          <Analytics />
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
