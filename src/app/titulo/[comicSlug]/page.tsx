@@ -62,27 +62,29 @@ const ComicDetail = () => {
                   )
                 )}
               </S.LatestChaptersList>
-              <S.Divider />
             </>
           )}
           <S.VolumesList>
             <h3>Volumes Disponíveis</h3>
             {comic.volumes.map((volume: Volume, index: number) => (
-              <S.VolumeItem key={index}>
-                <S.VolumeImage src={volume.image} alt={volume.title} />
-                <S.VolumeInfo>
-                  <h3>{volume.title}</h3>
-                  {volume.chapters.map(
-                    (chapter: Chapter, chapterIndex: number) => (
-                      <S.ChapterItem key={chapterIndex}>
-                        <Link href={`/titulo/${comic.slug}/${chapter.slug}`}>
-                          <S.ChapterTitle>{chapter.title}</S.ChapterTitle>
-                        </Link>
-                      </S.ChapterItem>
-                    )
-                  )}
-                </S.VolumeInfo>
-              </S.VolumeItem>
+              <>
+                <S.VolumeItem key={index}>
+                  <S.VolumeImage src={volume.image} alt={volume.title} />
+                  <S.VolumeInfo>
+                    <h3>{volume.title}</h3>
+                    {volume.chapters.map(
+                      (chapter: Chapter, chapterIndex: number) => (
+                        <S.ChapterItem key={chapterIndex}>
+                          <Link href={`/titulo/${comic.slug}/${chapter.slug}`}>
+                            <S.ChapterTitle>{chapter.title}</S.ChapterTitle>
+                          </Link>
+                        </S.ChapterItem>
+                      )
+                    )}
+                  </S.VolumeInfo>
+                </S.VolumeItem>
+                <S.Divider />
+              </>
             ))}
           </S.VolumesList>
         </S.MainSection>

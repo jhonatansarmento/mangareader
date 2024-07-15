@@ -4,7 +4,7 @@ import FloatButton from '@/shared/components/FloatButton';
 import comics from '@/shared/constants/volumes';
 import Link from 'next/link';
 import { notFound, useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
@@ -34,6 +34,21 @@ export default function ChapterPage({ params }: ChapterPageProps) {
   if (!chapter) {
     notFound();
   }
+
+  useEffect(() => {
+    // Salvar progresso no localStorage
+    if (chapter) {
+      const lastRead = {
+        chapterSlug: decodedChapterSlug,
+        comicSlug: decodedComicSlug,
+        chapterTitle: chapter.title,
+      };
+      localStorage.setItem(
+        `lastRead-${decodedComicSlug}`,
+        JSON.stringify(lastRead)
+      );
+    }
+  }, [chapter, decodedChapterSlug, decodedComicSlug]);
 
   const handleChapterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newChapterSlug = event.target.value;

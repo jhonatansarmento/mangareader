@@ -1,3 +1,4 @@
+import { devices } from '@/shared/constants/devices';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -80,10 +81,13 @@ export const VolumeItem = styled.div`
   margin-bottom: 20px;
   border-radius: 10px;
 `;
-
 export const VolumeImage = styled.img`
   max-width: 176px;
   border-radius: 5px;
+
+  @media ${devices.md} {
+    max-width: 96px;
+  }
 `;
 
 export const VolumeInfo = styled.div`
@@ -100,6 +104,10 @@ export const ChapterTitle = styled.p`
   font-size: 16px;
   color: #888;
   cursor: pointer;
+
+  @media ${devices.md} {
+    font-size: 14px;
+  }
 
   &:hover {
     text-decoration: underline;

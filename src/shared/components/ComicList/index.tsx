@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
-import * as S from './styles';
 import comics from '@/shared/constants/volumes';
+import Link from 'next/link';
+import React from 'react';
+import RecentChapter from '../RecentChapter';
+import * as S from './styles';
 
 export default function ComicList() {
   return (
@@ -34,7 +35,7 @@ export default function ComicList() {
                   <S.StatusFlag completed={comic.completed}>
                     {comic.completed ? 'Completo' : 'Em Andamento'}
                   </S.StatusFlag>
-                  <S.ReleaseDate>{comic.releaseDate}</S.ReleaseDate>
+                  <RecentChapter comicSlug={comic.slug} />
                 </S.InfoWrapper>
               </S.Item>
               {index < comics.length - 1 && <S.Divider />}
