@@ -72,6 +72,7 @@ export const NavButton = styled.button`
 `;
 
 export const ChapterSelect = styled.select`
+  width: 100%;
   background-color: transparent;
   border: none;
   color: white;
@@ -80,7 +81,6 @@ export const ChapterSelect = styled.select`
   appearance: none;
   cursor: pointer;
   text-align: center;
-
   option {
     background-color: #555;
   }
