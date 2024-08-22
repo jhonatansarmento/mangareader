@@ -238,6 +238,32 @@ const comics: Comic[] = [
           },
         ],
       },
+      {
+        title: 'Volume Atual',
+        image:
+          'https://storage.googleapis.com/onepiecemanga/CAPAS%20DE%20VOLUMES/Volume_108.jpg',
+        chapters: [
+          {
+            title: 'Capítulo 1124 - Melhor Amigo',
+            id: '9',
+            slug: slugify('Capítulo 1124 - Melhor Amigo'),
+            imageUrls: [
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo001.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo002.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo003.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo004.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo005.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo006.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo007.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo008.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo009.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo010.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo011.jpeg',
+              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo011.jpeg',
+            ],
+          },
+        ],
+      },
     ],
   },
   {
