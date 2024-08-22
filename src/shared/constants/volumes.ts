@@ -259,7 +259,6 @@ const comics: Comic[] = [
               'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo009.jpeg',
               'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo010.jpeg',
               'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo011.jpeg',
-              'https://storage.googleapis.com/onepiecemanga/Volume%20Atual/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo/Cap%C3%ADtulo%201124%20-%20Melhor%20Amigo011.jpeg',
             ],
           },
         ],
