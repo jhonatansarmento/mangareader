@@ -32,7 +32,7 @@ export default function ComicList() {
                   <Link href={`/titulo/${comic.slug}/${latestChapter.slug}`}>
                     <S.LatestChapter>{chapterTitle}</S.LatestChapter>
                   </Link>
-                  <S.StatusFlag completed={comic.completed}>
+                  <S.StatusFlag $completed={comic.completed}>
                     {comic.completed ? 'Completo' : 'Em Andamento'}
                   </S.StatusFlag>
                   <RecentChapter comicSlug={comic.slug} />

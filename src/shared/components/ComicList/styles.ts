@@ -38,10 +38,12 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 100px;
-  height: auto;
+  width: 100px; 
+  height: 150px;
+  object-fit: cover; 
   cursor: pointer;
 `;
+
 
 export const InfoWrapper = styled.div`
   display: flex;
@@ -82,12 +84,12 @@ export const Divider = styled.div`
 `;
 
 interface StatusFlagProps {
-  completed: boolean;
+  $completed: boolean; // Usando $ para props transitórias
 }
 
 export const StatusFlag = styled.div<StatusFlagProps>`
   padding: 2px 8px;
-  background-color: ${({ completed }) => (completed ? '#4CAF50' : '#FF9800')};
+  background-color: ${({ $completed }) => ($completed ? '#4CAF50' : '#FF9800')};
   color: white;
   border-radius: 4px;
   font-size: 12px;

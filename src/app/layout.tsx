@@ -2,9 +2,6 @@ import StyledComponentsRegistry from '@/lib/registry';
 import { GlobalStyle } from '@/styles/global.styles';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Leitor Online One Piece',
